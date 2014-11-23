@@ -1,11 +1,20 @@
 #barra-de-navegacion{
-  background-color: #FFFFFF; 
+  background-color: transparent; 
   border-left: none; 
   border-right: none; 
   border-top: none
 }
 
-
 .img-ancha{
 	width:100%;
+}
+
+.container-fluid{
+	padding: 0;
+}
+
+#header{
+	background-image: url("../images/texturadegradado.png"); 
+	background-repeat: repeat-x;
+	background-size: auto 100%;
 }

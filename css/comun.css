@@ -1,8 +1,8 @@
-#barra-de-navegacion{
-  background-color: transparent; 
-  border-left: none; 
-  border-right: none; 
-  border-top: none
+#barra-de-navegacion, #barra-de-navegacion .container{
+	background-color: transparent; 
+	border-left: none; 
+	border-right: none; 
+	border-top: none
 }
 
 .img-ancha{
@@ -17,4 +17,30 @@
 	background-image: url("../images/texturadegradado.png"); 
 	background-repeat: repeat-x;
 	background-size: auto 100%;
+}
+
+.panelcolumnaimg .panel-body{
+	padding: 0;
+}
+
+@media only screen and (max-width: 766px) {
+	.collapsing, .in {background-color: #fff;}
+	#header{
+		background-size: 200px;
+	}
+
+}
+
+#footer-col-cen{
+  text-align: center;
+}
+
+#footer-col-der{
+  text-align: right;
+}
+
+@media (max-width: 768px){
+  #footer-col-izq p, #footer-col-der p{
+    text-align: center;
+  }
 }

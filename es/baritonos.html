@@ -20,12 +20,20 @@
     
     <body>
       <div class="container-fluid"> 
-
+        
         <nav class="navbar navbar-default" id="barra-de-navegacion" role="navigation">
-
+  
           <div  id="header"> <!-- HEADER -->
             <div class="container">
-              <a href="./index.html"><img class="img-ancha" src="../images/logo.png"/></a>
+            <div id="col-12" style="text-align: right; padding-top: 20px; ">
+            <p>
+              <a href="#"><img src="../images/flags/spanish.png" alt="Spanish" /></a>
+              <a href="#"><img src="../images/flags/catalan.png" alt="Catalan" /></a>
+              <a href="#"><img src="../images/flags/italian.png" alt="Russian" /></a>
+              <a href="#"><img src="../images/flags/english.png" alt="English" /></a>
+            </p>
+          </div>
+            <a href="./index.html"><img class="img-ancha" src="../images/logo.png"/></a>
             </div>
 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,7 +60,7 @@
                       <li><a href="#">Mezzo-Sopranos</a></li>
                       <li><a href="#">Contraltos</a></li>
                       <li><a href="#">Tenores</a></li>
-                      <li><a href="./baritonos.html">Barítonos</a></li>
+                      <li class="active"><a href="./baritonos.html">Barítonos</a></li>
                       <li><a href="#">Bajo</a></li>
                     </ul>
                   </li>
@@ -78,64 +86,35 @@
                 </ul>
               </div><!-- /.navbar-collapse -->
             </div> <!-- ./ CONTAINER NAVBAR -->
-
+          
           </div> <!-- ./ HEADER -->
-
+        
         </nav>
 
         
         <div class="container"><!-- CONTENT -->
-          <div class="jumbotron">
+          <ol class="breadcrumb">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="#">Cantentes</a></li>
+            <li class="active">Barítonos</li>
+          </ol>
 
-            <h1>Qué es Bergerac</h1>
-            <p>O contenido destacado</p>
-            <p>
-              <a class="btn btn-primary btn-lg">Sobre Bergerac</a>
-            </p>
-            
-          </div><!-- ./JUMBOTRON-->
-          
-          <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Contenido destacado 1</h3>
-                </div>
-                <div class="panel-body">
-                  Texto corto
-                </div>
-              </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Juan José Navarro</h3>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="panel panel-default panelcolumnaimg">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Contenido destacado 2</h3>
-                </div>
-                <div class="panel-body">
-                  <img src="../images/indexrow/imagen2.jpg" class="img-ancha"/>
-                </div>
-              </div>
+            <div class="panel-body">
+              Texto corto
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Contenido destacado 3</h3>
-                </div>
-                <div class="panel-body">
-                  O texto largo: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt sequi suscipit odio ut atque praesentium eius, sint. Incidunt suscipit vero repellat non pariatur, eligendi quisquam sit doloribus facilis numquam, delectus.
-                </div>
               </div>
-            </div>
-
-          </div>
 
 
         </div><!-- ./CONTENT -->
-
         
+
         <div class="footer container" id="footer">
 
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="footer-col-izq">
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4" id="footer-col-izq">
             <p>
               <a href="#"><img src="../images/social/facebook.png" alt="Facebook" /></a>
               <a href="#"><img src="../images/social/googleplus.png" alt="Google Plus" /></a>
@@ -144,7 +123,15 @@
             </p>
           </div>
 
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="footer-col-der">
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-sm-push-4" id="footer-col-der">
+            <p>
+              <a href="#"><img src="../images/flags/spanish.png" alt="Spanish" /></a>
+              <a href="#"><img src="../images/flags/catalan.png" alt="Catalan" /></a>
+              <a href="#"><img src="../images/flags/italian.png" alt="Russian" /></a>
+              <a href="#"><img src="../images/flags/english.png" alt="English" /></a>
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-pull-4" id="footer-col-cen">
             <p>© Bergerac 2014</p>
           </div>
 

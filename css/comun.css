@@ -13,6 +13,11 @@
 	padding: 0;
 }
 
+.breadcrumb{
+  background-color: white;
+  text-transform: uppercase;
+}
+
 #header{
 	background-image: url("../images/texturadegradado.png"); 
 	background-repeat: repeat-x;
@@ -26,21 +31,11 @@
 @media only screen and (max-width: 766px) {
 	.collapsing, .in {background-color: #fff;}
 	#header{
-		background-size: 200px;
+		background-size: 220px;
 	}
 
 }
 
-#footer-col-cen{
-  text-align: center;
-}
-
 #footer-col-der{
   text-align: right;
-}
-
-@media (max-width: 768px){
-  #footer-col-izq p, #footer-col-der p{
-    text-align: center;
-  }
 }

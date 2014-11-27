@@ -1,4 +1,7 @@
-
+#idiomas{
+	text-align: right;
+	padding-top: 20px; 
+}
 #barra-de-navegacion, #barra-de-navegacion .container{
 	background-color: transparent; 
 	border-left: none; 

@@ -1,3 +1,8 @@
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
 #idiomas{
 	text-align: right;
 	padding-top: 20px; 
@@ -11,7 +16,8 @@
 	background-color: transparent; 
 	border-left: none; 
 	border-right: none; 
-	border-top: none
+	border-top: none;
+	text-transform: uppercase;
 }
 
 .img-ancha{
@@ -27,9 +33,11 @@
   text-transform: uppercase;
 }
 
-#header{
-	background-image: url("../images/texturadegradado.png"); 
-	background-repeat: repeat-x;
+.header-degradado{
+	background: linear-gradient(to top, #46423F 25%, black 40%);
+	background: -webkit-linear-gradient(to top, #46423F 25%, black 40%);
+	background: -o-linear-gradient(to top, #46423F 25%, black 40%);
+	background: -moz-linear-gradient(to top, #46423F 25%, black 40%);
 	background-size: auto 100%;
 }
 
@@ -37,10 +45,18 @@
 	padding: 0;
 }
 
+.navbar-ex1-collapse, .navbar-header{
+	background-color: #46423F;
+}
+
 @media only screen and (max-width: 766px) {
-	.collapsing, .in {background-color: #fff;}
-	#header{
-		background-size: 220px;
+	.collapsing, .in {background-color: #46423F;}
+	.header-degradado{
+	background: linear-gradient(to top, #46423F 25%, black 40%);
+	background: -webkit-linear-gradient(to top, #46423F 25%, black 40%);
+	background: -o-linear-gradient(to top, #46423F 25%, black 40%);
+	background: -moz-linear-gradient(to top, #46423F 25%, black 40%);
+	background-size: auto 100%;
 	}
 
 }

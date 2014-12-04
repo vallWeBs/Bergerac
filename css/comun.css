@@ -1,23 +1,8 @@
+/*CLASES GENERALES*/
+
 body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
-}
-
-#idiomas{
-	text-align: right;
-	padding-top: 20px; 
-}
-
-.logo-top{
-	margin-top: 20px;
-}
-
-#barra-de-navegacion, #barra-de-navegacion .container{
-	background-color: transparent; 
-	border-left: none; 
-	border-right: none; 
-	border-top: none;
-	text-transform: uppercase;
 }
 
 .img-ancha{
@@ -28,9 +13,22 @@ body {
 	padding: 0;
 }
 
-.breadcrumb{
-  background-color: white;
-  text-transform: uppercase;
+/*BARRA DE NAVEGACiÓN*/
+
+#barra-de-navegacion, #barra-de-navegacion .container{
+	background-color: transparent; 
+	border-left: none; 
+	border-right: none; 
+	border-top: none;
+	text-transform: uppercase;
+}
+
+.logo-top{
+	margin-top: 20px;
+}
+
+.navbar-ex1-collapse, .navbar-header{
+	background-color: #46423F;
 }
 
 .header-degradado{
@@ -39,14 +37,6 @@ body {
 	background: -o-linear-gradient(to top, #46423F 25%, black 40%);
 	background: -moz-linear-gradient(to top, #46423F 25%, black 40%);
 	background-size: auto 100%;
-}
-
-.panelcolumnaimg .panel-body{
-	padding: 0;
-}
-
-.navbar-ex1-collapse, .navbar-header{
-	background-color: #46423F;
 }
 
 @media only screen and (max-width: 766px) {
@@ -61,6 +51,50 @@ body {
 
 }
 
+#barra-de-navegacion .nav-tabs.nav-justified>li>a{
+	border: none;
+	color: white;
+	font-size: 14px;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#barra-de-navegacion .nav-tabs.nav-justified>li.open, 
+#barra-de-navegacion .nav-tabs.nav-justified>li:hover, 
+#barra-de-navegacion .nav-tabs.nav-justified>li.active, 
+#barra-de-navegacion .nav-tabs.nav-justified>li:focus{
+	background-color: rgb(231,231,231);
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+#barra-de-navegacion .nav-tabs.nav-justified>li.open>a, 
+#barra-de-navegacion .nav-tabs.nav-justified>li:hover>a, 
+#barra-de-navegacion .nav-tabs.nav-justified>li.active>a, 
+#barra-de-navegacion .nav-tabs.nav-justified>li:focus>a{
+	color: black;
+}
+
+/*CONTENT*/
+
+.breadcrumb{
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.panelcolumnaimg .panel-body{
+	padding: 0;
+}
+
+/*FOOTER*/
+
 #footer-col-der{
   text-align: right;
+}
+
+#footer{
+	background-color: black;
+	padding-top: 20px;
+	color: white;
+	border-top: 2px solid white;
 }

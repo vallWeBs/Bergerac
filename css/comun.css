@@ -2,10 +2,18 @@
 
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: 25;
-	background: #46423F;
+	font-weight: lighter;
+	background: black;
 	color:#FFF;
 	text-align:justify;
+}
+
+input, textarea{
+width:100%;
+}
+
+form{
+margin-bottom:20px;
 }
 
 .img-ancha{
@@ -17,43 +25,12 @@ body {
 
 }
 
-.pseudo-jumbotron{
-	margin-bottom:20px;
-	text-align:center;
-}
-
-.pseudo-jumbotron>h3{
-	text-align:left;
-}
-
-.pseudo-panels{
-	margin-bottom:20px;
-}
-.pseudo-panels h2{
-	text-align:center;
-}
-
 .btn-primary{
 	color: #fff;
 	background-color: rgba(54, 54, 55, 0.68);
 	border-color: rgba(54, 54, 55, 0.68);
 }
 
-.artista>.container{
-	margin-bottom:20px;
-}
-
-.jjnavarro{
-	background:#AAA;
-}
-
-.sbologna{
-	background:#888;
-}
-
-.bioimg{
-	margin:10px;
-}
 /*BARRA DE NAVEGACiÓN*/
 
 #barra-de-navegacion, #barra-de-navegacion .container{
@@ -62,6 +39,7 @@ body {
 	border-right: none; 
 	border-top: none;
 	text-transform: uppercase;
+	margin-bottom: 0;
 }
 
 .logo-top{
@@ -81,7 +59,7 @@ body {
 }
 
 @media only screen and (max-width: 766px) {
-	.collapsing, .in {background-color: #46423F;}
+	#barra-de-navegacion .collapsing, #barra-de-navegacion .in {background-color: #46423F;}
 	.header-degradado{
 		background: linear-gradient(to top, #46423F 25%, black 40%);
 		background: -webkit-linear-gradient(to top, #46423F 25%, black 40%);
@@ -89,7 +67,10 @@ body {
 		background: -moz-linear-gradient(to top, #46423F 25%, black 40%);
 		background-size: auto 100%;
 	}
-
+	.bioimg{
+		margin: 0 auto;
+		float:none!important;
+	}
 }
 
 #barra-de-navegacion .nav-tabs.nav-justified>li>a{
@@ -128,6 +109,15 @@ body {
 .breadcrumb{
 	background-color: transparent;
 	text-transform: uppercase;
+	padding-top: 20px;
+}
+
+#breadcrumb-container{
+	background-color: #46423f;
+}
+
+#breadcrumb-container ol{
+	padding-bottom:0;
 }
 
 a{
@@ -152,5 +142,54 @@ a:hover{
 	background-color: black;
 	padding-top: 20px;
 	color: white;
-	border-top: 2px solid white;
+	border-top: 1px solid white;
+}
+
+/*INDEX.HTML*/
+
+#pseudo-jumbotron-container{
+	background-color: #46423F;
+}
+
+.pseudo-jumbotron{
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.pseudo-jumbotron>h4{
+	text-align:left;
+}
+
+#pseudo-panels-container{
+	background-color: #46423F;
+}
+
+.pseudo-panels{
+	margin-bottom:20px;
+}
+.pseudo-panels h3{
+	text-align:center;
+}
+
+/*ARTISTAS*/
+
+.artista{
+	border-top: 1px solid white;
+}
+
+.artista>.container{
+	margin-bottom:20px;
+}
+
+.jjnavarro{
+	background:#AAA;
+}
+
+.sbologna{
+	background:#888;
+}
+
+.bioimg{
+	margin:10px;
+	float: right;
 }

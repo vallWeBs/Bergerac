@@ -1,8 +1,11 @@
 /*CLASES GENERALES*/
 
 body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 25;
+	background: #46423F;
+	color:#FFF;
+	text-align:justify;
 }
 
 .img-ancha{
@@ -11,8 +14,46 @@ body {
 
 .container-fluid{
 	padding: 0;
+
 }
 
+.pseudo-jumbotron{
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.pseudo-jumbotron>h3{
+	text-align:left;
+}
+
+.pseudo-panels{
+	margin-bottom:20px;
+}
+.pseudo-panels h2{
+	text-align:center;
+}
+
+.btn-primary{
+	color: #fff;
+	background-color: rgba(54, 54, 55, 0.68);
+	border-color: rgba(54, 54, 55, 0.68);
+}
+
+.artista>.container{
+	margin-bottom:20px;
+}
+
+.jjnavarro{
+	background:#AAA;
+}
+
+.sbologna{
+	background:#888;
+}
+
+.bioimg{
+	margin:10px;
+}
 /*BARRA DE NAVEGACiÓN*/
 
 #barra-de-navegacion, #barra-de-navegacion .container{
@@ -42,11 +83,11 @@ body {
 @media only screen and (max-width: 766px) {
 	.collapsing, .in {background-color: #46423F;}
 	.header-degradado{
-	background: linear-gradient(to top, #46423F 25%, black 40%);
-	background: -webkit-linear-gradient(to top, #46423F 25%, black 40%);
-	background: -o-linear-gradient(to top, #46423F 25%, black 40%);
-	background: -moz-linear-gradient(to top, #46423F 25%, black 40%);
-	background-size: auto 100%;
+		background: linear-gradient(to top, #46423F 25%, black 40%);
+		background: -webkit-linear-gradient(to top, #46423F 25%, black 40%);
+		background: -o-linear-gradient(to top, #46423F 25%, black 40%);
+		background: -moz-linear-gradient(to top, #46423F 25%, black 40%);
+		background-size: auto 100%;
 	}
 
 }
@@ -62,24 +103,39 @@ body {
 #barra-de-navegacion .nav-tabs.nav-justified>li.open, 
 #barra-de-navegacion .nav-tabs.nav-justified>li:hover, 
 #barra-de-navegacion .nav-tabs.nav-justified>li.active, 
-#barra-de-navegacion .nav-tabs.nav-justified>li:focus{
+#barra-de-navegacion .nav-tabs.nav-justified>li:focus,
+.nav-tabs>li>a:hover,
+.nav-tabs>li.active>a,
+.btn-primary:hover{
 	background-color: rgb(231,231,231);
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
+	border-color:rgb(231,231,231);;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
 }
 
 #barra-de-navegacion .nav-tabs.nav-justified>li.open>a, 
 #barra-de-navegacion .nav-tabs.nav-justified>li:hover>a, 
 #barra-de-navegacion .nav-tabs.nav-justified>li.active>a, 
-#barra-de-navegacion .nav-tabs.nav-justified>li:focus>a{
+#barra-de-navegacion .nav-tabs.nav-justified>li:focus>a,
+.nav-tabs>li>a:hover,
+.nav-tabs>li.active>a,
+.btn-primary:hover{
 	color: black;
 }
 
 /*CONTENT*/
 
 .breadcrumb{
-  background-color: white;
-  text-transform: uppercase;
+	background-color: transparent;
+	text-transform: uppercase;
+}
+
+a{
+	color:white;
+}
+
+a:hover{
+	color: rgb(231,231,231)
 }
 
 .panelcolumnaimg .panel-body{
@@ -89,7 +145,7 @@ body {
 /*FOOTER*/
 
 #footer-col-der{
-  text-align: right;
+	text-align: right;
 }
 
 #footer{

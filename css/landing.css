@@ -12,11 +12,12 @@ html, body, #container {
 
 body {
 color:white;
-background:url(../images/background.jpg) no-repeat center center fixed;
+/*background:url(../images/background.jpg) no-repeat center center fixed;
 -webkit-background-size:cover;
 -moz-background-size:cover;
 -o-background-size:cover;
-background-size:cover;
+background-size:cover;*/
+background-color: white;
 }
 
 
@@ -26,7 +27,7 @@ background-size:cover;
 }
 
 #gap{
-    height:10%;
+    height:50%;
 }
 
 #page-wrap {
@@ -64,7 +65,7 @@ padding:10px;
 
 
 #idiomas{
-
+    background-color: black;
     padding:0% 10%;
     margin:100px auto;  
     text-align: justify;

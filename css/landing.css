@@ -1,6 +1,16 @@
 *,.jumbotron h1 {
 margin:0;
 padding:0;
+text-align:center;
+}
+
+* {
+    margin: 0;
+    text-align:center;
+}
+html, body {
+    height: 100%;
+    text-align:center;
 }
 
 html, body, #container {
@@ -8,26 +18,28 @@ html, body, #container {
     width: 100%;
     	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: lighter;
+    margin:auto;
 }
 
 body {
 color:white;
-background:url(../images/background.jpg) no-repeat center center fixed;
+/*background:url(../images/background.jpg) no-repeat center center fixed;*/
 -webkit-background-size:cover;
 -moz-background-size:cover;
 -o-background-size:cover;
 background-size:cover;
 }
 
+#wrapper {
+    text-align:center;
+}
 
 #firma img{
 	height:100%;
 	margin-right:2px;
 }
 
-#gap{
-    height:10%;
-}
+
 
 #page-wrap {
 width:400px;
@@ -45,10 +57,16 @@ margin:0 0 30px;
 }
 
 .logo {
-text-align:center;
-background:none;
-margin-bottom:0;
-padding:10px;
+    text-align:center;
+    position:fixed;
+    text-align:center;
+    background:none;
+    margin-bottom:0;
+    padding:10px;
+   left:0px;
+   width:100%;
+   bottom:100px;
+
 }
 
 .logo >img{
@@ -66,9 +84,10 @@ padding:10px;
 #idiomas{
 
     padding:0% 10%;
-    margin:100px auto;  
+    /*margin:100px auto;  */    
     text-align: justify;
     }
+
 #idiomas > div {
     display: inline-block;
     vertical-align: top;
@@ -77,11 +96,23 @@ padding:10px;
     *display: inline;
     zoom: 1;
     }
+
 #idiomas:after {
     content: "";
     width: 100%;
     display: inline-block;
     }
+
+.footer{
+    background-color: black;
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:50px;
+   width:100%;
+
+}
+
 
 
 

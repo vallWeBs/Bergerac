@@ -58,7 +58,12 @@ margin-bottom:20px;
 	background-size: auto 100%;
 }
 
-@media only screen and (max-width: 766px) {
+#barra-de-navegacion .navbar-ex1-collapse{
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+@media only screen and (max-width: 768px) {
 	#barra-de-navegacion .collapsing, #barra-de-navegacion .in {background-color: #46423F;}
 	.header-degradado{
 		background: linear-gradient(to top, #46423F 25%, black 40%);
@@ -70,6 +75,15 @@ margin-bottom:20px;
 	.bioimg{
 		margin: 0 auto;
 		float:none!important;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	#barra-de-navegacion ul.nav>li:first-child a{
+		text-align: left;
+	}
+	#barra-de-navegacion ul.nav>li:last-child a{
+		text-align: right;
 	}
 }
 
@@ -177,6 +191,10 @@ a:hover{
 	border-top: 1px solid white;
 }
 
+.title-artista{
+	text-align: center;
+}
+
 .artista>.container{
 	margin-bottom:20px;
 }
@@ -192,4 +210,10 @@ a:hover{
 .bioimg{
 	margin:10px;
 	float: right;
+}
+
+/*CONTACTO*/
+
+.control-group textarea, .control-group input{
+	color: black;
 }
